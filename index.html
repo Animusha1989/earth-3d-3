@@ -33,11 +33,11 @@
         const loader = new THREE.TextureLoader();
 
         // Load textures
-        const earthDayTexture = loader.load('https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg');
-        const earthNightTexture = loader.load('https://www.solarsystemscope.com/textures/download/2k_earth_nightmap.jpg');
-        const earthSpecularTexture = loader.load('https://www.solarsystemscope.com/textures/download/2k_earth_specular_map.jpg');
-        const cloudsTexture = loader.load('https://www.solarsystemscope.com/textures/download/2k_earth_clouds.jpg');
-        const starsTexture = loader.load('https://www.solarsystemscope.com/textures/download/8k_stars_milky_way.jpg');
+        const earthDayTexture = loader.load('textures/2k_earth_daymap.jpg')
+        const earthNightTexture = loader.load('textures/2k_earth_nightmap.jpg')
+        const earthSpecularTexture = loader.load('textures/2k_earth_specular_map.jpg')
+        const cloudsTexture = loader.load('textures/2k_earth_clouds.jpg');
+        const starsTexture = loader.load('textures/8k_stars_milky_way.jpg');
 
         // Starfield background
         const starGeometry = new THREE.SphereGeometry(500, 64, 64);
