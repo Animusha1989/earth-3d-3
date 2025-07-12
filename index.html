@@ -33,6 +33,7 @@
         const loader = new THREE.TextureLoader();
 
         // Load textures
+         const marsTexture = loader.load('textures/2k_mars.jpg');
         const earthDayTexture = loader.load('textures/2k_earth_daymap.jpg')
         const earthNightTexture = loader.load('textures/2k_earth_nightmap.jpg')
         const earthSpecularTexture = loader.load('textures/2k_earth_specular_map.jpg')
@@ -76,7 +77,6 @@
         scene.add(clouds);
 
         // Mars
-     const marsTexture = loader.load('textures/2k_mars.jpg');
 
      const marsGeometry = new THREE.SphereGeometry(0.53, 64, 64); // Размер меньше Земли
      const marsMaterial = new THREE.MeshPhongMaterial({
