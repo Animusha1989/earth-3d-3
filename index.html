@@ -75,6 +75,18 @@
         clouds.castShadow = true;
         scene.add(clouds);
 
+        // Mars
+     const marsTexture = loader.load('textures/2k_mars.jpg');
+
+     const marsGeometry = new THREE.SphereGeometry(0.53, 64, 64); // Размер меньше Земли
+     const marsMaterial = new THREE.MeshPhongMaterial({
+     map: marsTexture
+                     });
+    const mars = new THREE.Mesh(marsGeometry, marsMaterial);
+    mars.position.x = 3; // Отодвинуть правее от Земли
+    scene.add(mars);
+
+
         // Sun light
         const sunLight = new THREE.DirectionalLight(0xffffff, 1.5);
         sunLight.position.set(5, 3, 5);
